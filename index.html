@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/butterfly/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ray OS // Butterfly Effect</title>
+    <meta name="description" content="Personal portfolio designed as a next-gen desktop operating system." />
+    <script type="module" crossorigin src="/butterfly/assets/index-CkpDgvO9.js"></script>
+    <link rel="stylesheet" crossorigin href="/butterfly/assets/index-By6M_9Mu.css">
+  </head>
+  <body>
+    
+    <!-- Glavni kontejner -->
+    <div id="desktop-app">
+      
+      <!-- PRELOADER (Sloj iznad svega) -->
+      <div id="preloader">
+        <div id="system-boot">
+    <div class="boot-box">
+      <p class="boot-loading">// RAY_OS_DETECTED...</p>
+      <button id="boot-btn">INITIALIZE SYSTEM</button>
+    </div>
+  </div>
+  <div class="preloader-content">
+    
+    <!-- Prvo se pojavljuje ovaj citat -->
+    <p class="quote-text"></p>
+    
+    <!-- Glavni naslov koji bljeska nakon citata -->
+    <h1 class="butterfly-text">BUTTERFLY EFFECT</h1>
+    <p class="system-status">INITIALIZING CORE_SYSTEM PROTOCOL...</p>
+  </div>
+</div>
+
+      <!-- RADNA POVRŠINA (Desktop koji je na početku blurovan) -->
+     <main id="desktop">
+  
+  <!-- DIMENZIJA 1: Trenutni mračni svet -->
+  <div id="world-current" class="world-layer"></div >
+
+  <!-- DIMENZIJA 2: Nova dimenzija u koju se pretapamo (na početku skrivena) -->
+  <div id="world-next" class="world-layer"></div >
+
+  <!-- KONTEJNER ZA SCENARIJE (Tri strelice) -->
+  <div id="navigation-core">
+    <!-- Tvoje tri strelice (left, forward, right) ostaju iste -->
+    <div id="trigger-left" class="nav-arrow arrow-left">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://w3.org"><path d="M19 12H5M5 12L11 6M5 12L11 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div id="trigger-forward" class="nav-arrow arrow-forward">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://w3.org"><path d="M12 19V5M12 5L6 11M12 5L18 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div id="trigger-right" class="nav-arrow arrow-right">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://w3.org"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+  </div>
+
+  <p class="cinematic-subtitle">It is a rainy day, which side should I go?</p>
+  <p class="sunny-subtitle">
+  "Oh, rain stopped... What a beautiful day." <br>
+  <span class="sunny-sub-fade">I'll rest here for a while, it's gorgeous.</span>
+</p>
+
+<!-- LIK KOJI ULEĆE IZ TRANSPARENTNE POZADINE -->
+<div id="character-container">
+  <img id="sunny-boy" src="./src/assets/smiling-boy.png" alt="Ray OS Character" />
+</div>
+
+<!-- INTERAKTIVNI IZBOR (Dugmići koji se stvaraju) -->
+<div id="choice-interface">
+  <p class="choice-title">// INTERACTION DETECTED: A stranger approaches.</p>
+  <div class="choice-buttons">
+    <button id="choice-accept" class="btn-choice">// ACCEPT_MEET</button>
+    <button id="choice-reject" class="btn-choice">// REJECT_MEET</button>
+  </div>
+</div>
+      <!-- JEDINSTVENI VIRTUELNI RIJKSMUSEUM AMSTERDAM -->
+      <div id="museum-gallery">
+        <div class="gallery-header">
+          <h2 class="museum-title">// RIJKSMUSEUM AMSTERDAM // EXHIBITION_MODE</h2>
+          <p class="museum-subtitle">Selected Masterpieces by Rembrandt & Vermeer</p>
+        </div>
+
+        <div class="gallery-container">
+          <!-- SLIKA 1: VERMER -->
+          <div class="artwork-card">
+            <div class="art-frame">
+              <img src="./src/assets/vermeer-milkmaid.webp" alt="Johannes Vermeer" />
+            </div>
+            <div class="art-info">
+              <h3>Johannes Vermeer</h3>
+              <p class="art-desc">The Milkmaid (c. 1660). A masterpiece of light, precision, and silent digital symmetry.</p>
+            </div>
+          </div>
+
+          <!-- SLIKA 2: REMBRANT -->
+          <div class="artwork-card">
+            <div class="art-frame">
+              <img src="./src/assets/rembrandt-nightwatch.webp" alt="Rembrandt van Rijn" />
+            </div>
+            <div class="art-info">
+              <h3>Rembrandt van Rijn</h3>
+              <p class="art-desc">The Night Watch (1642). Famous for its colossal scale, dramatic chiascuro, and dynamic engineering.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- DUGMIĆI ZA NAVIGACIJU (Samo jedan jedini footer unutar muzeja) -->
+        <div id="museum-footer">
+          <button id="rewind-trigger" class="btn-museum-nav">// REWIND_TIMELINE</button>
+          <button id="contact-trigger" class="btn-museum-nav">// INITIALIZE_CONTACT</button>
+        </div>
+      </div>
+
+      <!-- KONTAKT PANEL (Sloj iznad svega) -->
+      <div id="contact-panel">
+        <div class="contact-box">
+          <h3>// CONNECT_WITH_RAY_DIGITAL</h3>
+          <p>Let's engineer digital superiority together.</p>
+          <a href="mailto:hello@raydigital.tech" class="contact-link">hello@raydigital.tech</a>
+          <button id="close-contact">[CLOSE_SYSTEM]</button>
+        </div>
+      </div>
+
+    </main> <!-- Ovde se zatvara glavni desktop tag -->
+
+
+<!-- AUDIO ELEMENT ZA KLIK -->
+<audio id="click-sfx" src="./src/assets/click-sfx.mp3"></audio>
+      <audio id="bg-music" src="/butterfly/assets/intro-D33gMkOX.m4a" loop></audio>
+<audio id="bg-rain" src="/butterfly/assets/intro-D33gMkOX.m4a" loop></audio>
+
+    </div>
+
+  </body>
+</html>
